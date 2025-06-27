@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Registration Portal</title>
+    <style>@media (max-width: 768px) {
+    .row {
+        grid-template-columns:   1fr;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input, select {
+        font-size: 14px;
+        height: 35px;
+    }
+}
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        
+        html {
+            font-family: cursive;
+            background: lightblue;
+        }
+
+        .d1 {
+            width: 100%;
+            max-width: 700px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px 10px 50px 10px;
+            border-radius: 5px;
+        }
+
+        h1 {
+            font-size: 35px;
+            text-align: center;
+            text-decoration: underline ;
+            margin: 0px;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .form group {
+            margin-top: 15px;
+            padding: 10px;
+            flex-direction: column;
+            display: flex;
+            width: 100%;
+
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            height: 40px;
+            border: 1px solid;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: 17px;
+            height: 17px;
+            margin-left: 5px;
+            position: relative;
+            top: 2px;
+        }
+
+        .d1 {
+            box-shadow: 15px 15px 5px gray;
+        }
+
+        h1 {
+            text-shadow: 4px 4px 4px lightcoral;
+            transition: transform 2s;
+            transition-delay: 3s;
+            transition-timing-function: ease-out;
+            position: relative;
+            animation: anime 4s ease-in-out 0s infinite;
+            /* animation-direction:alternate; */
+        }
+
+        @keyframes anime {
+            form {
+                /* background-color: aqua; */
+
+                color: rgb(254, 238, 8);
+
+            }
+
+            to {
+                /* background-color: orangered; */
+                color: rgb(49, 218, 40);
+
+            }
+        }
+        /* body{
+              text-shadow: 4px 4px 4px lightcoral;
+            transition: transform 2s;
+            transition-delay: 3s;
+            transition-timing-function: ease-out;
+            position: relative;
+            animation: anime1 4s ease-in-out 0s infinite;
+        }
+         @keyframes anime1 {
+            form {
+                /* background-color: aqua; */
+
+                /* color: rgb(254, 238, 8); */
+
+            /* } */
+
+            /* to { */
+                /* background-color: orangered; */
+                /* color: rgb(49, 218, 40); */
+
+            /* } */
+        
+        /* #i{
+            border: 9px red;
+        }  */
+    </style>
+</head>
+
+<body>
+    <div class="d1">
+        <form action="subdemo.html" method="post">
+            <h1> Hackathon Registration Portal </h1>
+            <div class="row">
+                <div class="group form">
+                    <label for="text " class="label"> Name :-</label>
+
+                    <input class="inp1" type="text"  placeholder="Enter your Name"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="group form">
+                    <label for="text"> Father's Name :-</label><br>
+                    <input class="inp1" id="i" type="text" required placeholder="Enter your Father's Name">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="group form">
+                    <label for="text"> Roll no. :-</label><br>
+                    <input class="inp1" type="text" required placeholder="Enter your Roll.no.">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="group form">
+                    <label for="text"> Course :-</label>
+                    <input class="inp1" type="text" required placeholder="Enter your Course">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="group form">
+                    <label for="checkbox"> Branch</label>
+                    <input type="checkbox">CSE
+                    <input type="checkbox">IT
+                    <input type="checkbox">AiMl
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="group form">
+                    <label for="date"> D O B :-</label>
+                    <input class="inp1" type="date">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form group">
+                    <label for="text" >Mo.no</label>
+                    <input class="inp1" type="text" placeholder="Enter your mobile no." required>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="group form">
+                    <label for="email" >Email</label>
+                    <input class="inp1" type="email" placeholder="Enter you Email " >
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="group form">
+                    <label for="radio">Gender</label>
+                    <input type="radio" name="g1">Male
+                    <input type="radio" name="g1">Female
+                </div>
+            </div>
+
+            <div class="roe">
+                <div class="group form ">
+                    <label for="select">Domain</label>
+                    <select>
+                        <option>Data Science</option>
+                        <option>Web Development</option>
+                        <option> Artificial intelligence</option>
+                        <option> Machine learning</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="group form">
+                    <label for="file"> Submit your image :-</label>
+                    <input id="i2" type="file" >
+                </div>
+            </div>
+<div class="group form">
+    <label for="captchaInput">Enter the CAPTCHA below:</label>
+    <div id="captchaText" style="font-weight: bold; font-size: 18px; letter-spacing: 3px; margin: 10px 0;"></div>
+    <input type="text" id="captchaInput" placeholder="Type CAPTCHA here" required>
+</div>
+
+<button type="button" onclick="generatedCaptcha = generateCaptcha()">Refresh CAPTCHA</button>
+
+            <div class="d2">
+                <label for="submit"> </label>
+                <input id="i3" type="submit">
+            </div>
+        </form>
+
+
+
+    </div>
+
+</body>
+<script>
+    
+  // Auto-capitalize first letter of name input
+document.querySelector('input[placeholder="Enter your Name"]').addEventListener("blur", function () {
+    const words = this.value.split(" ");
+    this.value = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+});
+
+// Validate mobile number format
+document.querySelector('form').addEventListener("submit", function (event) {
+    const mobileInput = document.querySelector('input[placeholder="Enter your mobile no."]');
+    const mobile = mobileInput.value.trim();
+    const mobileRegex = /^[0-9]\d{9}$/;
+
+    if (!mobileRegex.test(mobile)) {
+        alert("Please enter a valid 10-digit number.");
+        mobileInput.focus();
+        event.preventDefault();
+    }
+});
+
+// Highlight missing required fields
+document.querySelector('form').addEventListener("submit", function (event) {
+    const requiredFields = document.querySelectorAll('input[required]');
+    let valid = true;
+
+    requiredFields.forEach(field => {
+        if (!field.value.trim()) {
+            field.style.borderColor = "red";
+            valid = false;
+        } else {
+            field.style.borderColor = "green";
+        }
+    });
+
+    if (!valid) {
+        alert("Please fill out all required fields highlighted in red.");
+        event.preventDefault();
+    }
+});
+// Function to generate a random 6-character CAPTCHA
+function generateCaptcha() {
+    const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+    let captcha = "";
+    for (let i = 0; i < 6; i++) {
+        captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    document.getElementById("captchaText").textContent = captcha;
+    return captcha;
+}
+
+let generatedCaptcha = generateCaptcha(); // Initial CAPTCHA
+
+// Validate CAPTCHA on submit
+document.querySelector("form").addEventListener("submit", function (event) {
+    const captchaInput = document.getElementById("captchaInput").value.trim();
+
+    if (captchaInput.toUpperCase() !== generatedCaptcha) {
+        alert("Incorrect CAPTCHA. Please try again.");
+        generatedCaptcha = generateCaptcha(); // Refresh CAPTCHA
+        event.preventDefault();
+    }
+});
+
+
+//   document.querySelector("form").addEventListener("submit", function (event) {
+//         const name = document.querySelector('input[placeholder="Enter your Name"]').value.trim();
+//         const email = document.querySelector('input[type="email"]').value.trim();
+
+//         if (!name || !email) {
+//             alert("Please fill in both your Name and Email before submitting.");
+//             event.preventDefault(); // Stop form submission
+//         } else {
+//             alert("Thank you for registering, " + name + "!");
+//         }
+//     });
+    
+</script>
+
+
+</html>
